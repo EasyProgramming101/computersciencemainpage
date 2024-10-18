@@ -3,15 +3,91 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Simple Web Page</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Introduction to Java: Variables, Data Types</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
-    <div class="container">
-        <h1>Welcome to My Web Page</h1>
-        <button id="colorButton">Click me to change color</button>
-    </div>
 
-    <script src="script.js"></script>
+    <!-- Video Lecture Section -->
+    <section id="lecture">
+        <h1>Video Lecture: Introduction to Java - Variables, Data Types</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/sVIvhzEizEQ?si=WPC5E27EDEL0PO2m" 
+                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+    </section>
+
+    <!-- Quiz Section -->
+    <section id="quiz">
+        <h2>Quiz: Variables and Data Types in Java</h2>
+        <form id="quizForm">
+            <div class="quiz-question">
+                <p>1. Which of the following is NOT a primitive data type in Java?</p>
+                <input type="radio" name="q1" value="A"> A. int<br>
+                <input type="radio" name="q1" value="B"> B. boolean<br>
+                <input type="radio" name="q1" value="C"> C. String<br>
+                <input type="radio" name="q1" value="D"> D. double<br>
+                <span class="feedback" id="feedback1"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>2. What is the size of a ‘long’ data type in Java?</p>
+                <input type="radio" name="q2" value="A"> A. 4 bytes<br>
+                <input type="radio" name="q2" value="B"> B. 8 bytes<br>
+                <input type="radio" name="q2" value="C"> C. 16 bytes<br>
+                <input type="radio" name="q2" value="D"> D. 2 bytes<br>
+                <span class="feedback" id="feedback2"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>3. Which of the following can store fractional numbers in Java?</p>
+                <input type="radio" name="q3" value="A"> A. byte<br>
+                <input type="radio" name="q3" value="B"> B. char<br>
+                <input type="radio" name="q3" value="C"> C. int<br>
+                <input type="radio" name="q3" value="D"> D. float<br>
+                <span class="feedback" id="feedback3"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>4. Which keyword is used to declare a constant in Java?</p>
+                <input type="radio" name="q4" value="A"> A. const<br>
+                <input type="radio" name="q4" value="B"> B. final<br>
+                <input type="radio" name="q4" value="C"> C. static<br>
+                <input type="radio" name="q4" value="D"> D. constant<br>
+                <span class="feedback" id="feedback4"></span>
+            </div>
+
+            <div class="quiz-question">
+                <p>5. What happens when a larger data type is assigned to a smaller data type in Java without explicit casting?</p>
+                <input type="radio" name="q5" value="A"> A. Data is lost<br>
+                <input type="radio" name="q5" value="B"> B. Type mismatch error<br>
+                <input type="radio" name="q5" value="C"> C. Data is truncated<br>
+                <input type="radio" name="q5" value="D"> D. Nothing happens, it's automatic<br>
+                <span class="feedback" id="feedback5"></span>
+            </div>
+
+            <button type="submit">Submit Quiz</button>
+        </form>
+    </section>
+
+    <!-- Assignment Section -->
+    <section id="assignment">
+        <h2>Assignment</h2>
+        <p><strong>Assignment Question:</strong></p>
+        <p>Write a Java program that declares variables of all the primitive data types (byte, short, int, long, float, double, char, boolean). Assign values to each and print them. Additionally, explain how Java handles type conversion when assigning a larger data type to a smaller one.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto:programmingmadesimple101@gmail.com">programmingmadesimple101@gmail.com</a></p>
+        <p>If the link does not work, send your assignment manually to: programmingmadesimple101@gmail.com</p>
+        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
+        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
+    </section>
+
+    <!-- Donation Section -->
+    <section id="donation">
+        <h2>PLEASE DONATE</h2>
+        <p>Account Number: 2032202001590</p>
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
+        <p>Wave Mobile: 3709558</p>
+        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
+    </section>
+
+    <script src="script.js"></script> <!-- Link to external JS file -->
 </body>
 </html>
