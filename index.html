@@ -3,64 +3,64 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Introduction to Java: Variables, Data Types</title>
+    <title>Basic Operators in Java</title>
     <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
 </head>
 <body>
 
     <!-- Video Lecture Section -->
     <section id="lecture">
-        <h1>Video Lecture: Introduction to Java - Variables, Data Types</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/sVIvhzEizEQ?si=WPC5E27EDEL0PO2m" 
+        <h1>Video Lecture: Basic Operators in Java</h1>
+        <iframe width="400" height="315" src="https://www.youtube.com/embed/8CX4Tdttbqk?si=0KlzEJV3VAuutwD7" 
                 title="YouTube video player" frameborder="0" allowfullscreen></iframe>
     </section>
 
     <!-- Quiz Section -->
     <section id="quiz">
-        <h2>Quiz: Variables and Data Types in Java</h2>
+        <h2>Quiz: Basic Operators in Java</h2>
         <form id="quizForm">
             <div class="quiz-question">
-                <p>1. Which of the following is NOT a primitive data type in Java?</p>
-                <input type="radio" name="q1" value="A"> A. int<br>
-                <input type="radio" name="q1" value="B"> B. boolean<br>
-                <input type="radio" name="q1" value="C"> C. String<br>
-                <input type="radio" name="q1" value="D"> D. double<br>
+                <p>1. Which operator is used for addition in Java?</p>
+                <input type="radio" name="q1" value="A"> A. *<br>
+                <input type="radio" name="q1" value="B"> B. +<br>
+                <input type="radio" name="q1" value="C"> C. /<br>
+                <input type="radio" name="q1" value="D"> D. %<br>
                 <span class="feedback" id="feedback1"></span>
             </div>
 
             <div class="quiz-question">
-                <p>2. What is the size of a ‘long’ data type in Java?</p>
-                <input type="radio" name="q2" value="A"> A. 4 bytes<br>
-                <input type="radio" name="q2" value="B"> B. 8 bytes<br>
-                <input type="radio" name="q2" value="C"> C. 16 bytes<br>
-                <input type="radio" name="q2" value="D"> D. 2 bytes<br>
+                <p>2. What will be the output of the expression `10 / 3` in Java?</p>
+                <input type="radio" name="q2" value="A"> A. 3.333<br>
+                <input type="radio" name="q2" value="B"> B. 3<br>
+                <input type="radio" name="q2" value="C"> C. 4<br>
+                <input type="radio" name="q2" value="D"> D. 0<br>
                 <span class="feedback" id="feedback2"></span>
             </div>
 
             <div class="quiz-question">
-                <p>3. Which of the following can store fractional numbers in Java?</p>
-                <input type="radio" name="q3" value="A"> A. byte<br>
-                <input type="radio" name="q3" value="B"> B. char<br>
-                <input type="radio" name="q3" value="C"> C. int<br>
-                <input type="radio" name="q3" value="D"> D. float<br>
+                <p>3. Which operator is used to find the remainder of a division?</p>
+                <input type="radio" name="q3" value="A"> A. /<br>
+                <input type="radio" name="q3" value="B"> B. %<br>
+                <input type="radio" name="q3" value="C"> C. ><br>
+                <input type="radio" name="q3" value="D"> D. <=<br>
                 <span class="feedback" id="feedback3"></span>
             </div>
 
             <div class="quiz-question">
-                <p>4. Which keyword is used to declare a constant in Java?</p>
-                <input type="radio" name="q4" value="A"> A. const<br>
-                <input type="radio" name="q4" value="B"> B. final<br>
-                <input type="radio" name="q4" value="C"> C. static<br>
-                <input type="radio" name="q4" value="D"> D. constant<br>
+                <p>4. What will be the result of `5 * 2`?</p>
+                <input type="radio" name="q4" value="A"> A. 10<br>
+                <input type="radio" name="q4" value="B"> B. 15<br>
+                <input type="radio" name="q4" value="C"> C. 7<br>
+                <input type="radio" name="q4" value="D"> D. 0<br>
                 <span class="feedback" id="feedback4"></span>
             </div>
 
             <div class="quiz-question">
-                <p>5. What happens when a larger data type is assigned to a smaller data type in Java without explicit casting?</p>
-                <input type="radio" name="q5" value="A"> A. Data is lost<br>
-                <input type="radio" name="q5" value="B"> B. Type mismatch error<br>
-                <input type="radio" name="q5" value="C"> C. Data is truncated<br>
-                <input type="radio" name="q5" value="D"> D. Nothing happens, it's automatic<br>
+                <p>5. Which of the following is NOT a valid operator in Java?</p>
+                <input type="radio" name="q5" value="A"> A. ^<br>
+                <input type="radio" name="q5" value="B"> B. &<br>
+                <input type="radio" name="q5" value="C"> C. ++<br>
+                <input type="radio" name="q5" value="D"> D. **<br>
                 <span class="feedback" id="feedback5"></span>
             </div>
 
@@ -72,9 +72,9 @@
     <section id="assignment">
         <h2>Assignment</h2>
         <p><strong>Assignment Question:</strong></p>
-        <p>Write a Java program that declares variables of all the primitive data types (byte, short, int, long, float, double, char, boolean). Assign values to each and print them. Additionally, explain how Java handles type conversion when assigning a larger data type to a smaller one.</p>
-        <p>Please submit your assignment by sending an email to: <a href="mailto:programmingmadesimple101@gmail.com">programmingmadesimple101@gmail.com</a></p>
-        <p>If the link does not work, send your assignment manually to: programmingmadesimple101@gmail.com</p>
+        <p>Create a Java program that accepts two numbers from the user and performs the following operations: addition, subtraction, multiplication, division, and modulus. Output the results and discuss the differences between integer division and floating-point division.</p>
+        <p>Please submit your assignment by sending an email to: <a href="mailto: programmingmadesimple101@gmail.com"> programmingmadesimple101@gmail.com </a></p>
+        <p>If the link does not work, send your assignment manually to: programmingmadesimple101@gmail.com </p>
         <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
         <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
     </section>
