@@ -11,11 +11,11 @@ document.getElementById('quizForm').addEventListener('submit', function(event) {
 
     // Correct answers for each question
     const correctAnswers = {
-        q1: 'C',
+        q1: 'B',
         q2: 'B',
-        q3: 'D',
-        q4: 'B',
-        q5: 'B'
+        q3: 'B',
+        q4: 'A',
+        q5: 'D'
     };
 
     // Check each question
