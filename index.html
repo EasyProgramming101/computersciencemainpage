@@ -3,91 +3,99 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Basic Operators in Java</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS file -->
+    <title>Computer Science Genius Academy</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="mobile-notice" id="mobileNotice">
+        📱 For the best experience, please rotate your device to landscape mode.
+        <button class="notice-close" onclick="this.parentElement.style.display='none'">×</button>
+    </div>
+    <nav class="navbar">
+        <div class="logo">Computer Science Genius Academy</div>
+        <button class="hamburger" id="hamburgerMenu">&#9776;</button>
+        <div class="nav-links" id="navLinks">
+            <a href="https://videolectures101.github.io/computervideolecture/" target="_blank">Video Lectures</a>
+            <a href="https://computerquiz101.github.io/computerquiz/" target="_blank">Test Your Knowledge</a>
+            <a href="#" class="resources-link">
+                <span>Downloadable Resources</span>
+                <i class="lock-icon">🔒</i>
+                <div class="upgrade-tooltip">Upgrade to Pro to unlock</div>
+            </a>
+            <a href="https://computerquiz101.github.io/PracticeQuestions/" target="_blank">Practice Questions</a>
+        </div>
+    </nav>
 
-    <!-- Video Lecture Section -->
-    <section id="lecture">
-        <h1>Video Lecture: Basic Operators in Java</h1>
-        <iframe width="400" height="315" src="https://www.youtube.com/embed/8CX4Tdttbqk?si=0KlzEJV3VAuutwD7" 
-                title="YouTube video player" frameborder="0" allowfullscreen></iframe>
-    </section>
+    <div class="upgrade-banner">
+        <a href="https://pricingpage101.github.io/pricings/" class="upgrade-link">
+            <span class="pro-button">🌟 Upgrade to Pro! 🌟</span>
+        </a>
+        <a href="https://pricingpage101.github.io/donation/" class="donate-link">
+            <span class="donate-button">💝 Donate Here! 💝</span>
+        </a>
+    </div>
 
-    <!-- Quiz Section -->
-    <section id="quiz">
-        <h2>Quiz: Basic Operators in Java</h2>
-        <form id="quizForm">
-            <div class="quiz-question">
-                <p>1. Which operator is used for addition in Java?</p>
-                <input type="radio" name="q1" value="A"> A. *<br>
-                <input type="radio" name="q1" value="B"> B. +<br>
-                <input type="radio" name="q1" value="C"> C. /<br>
-                <input type="radio" name="q1" value="D"> D. %<br>
-                <span class="feedback" id="feedback1"></span>
+    <div class="container">
+        <h1>Welcome to Computer Science Genius Academy</h1>
+        <p>Your comprehensive online computer science learning platform. Explore programming, data structures, algorithms, and more with expert-curated content.</p>
+        
+        <div class="feature-grid">
+            <div class="feature-box">
+                <h2>Personalized Learning</h2>
+                <p>Customizable study paths for mastering computer science concepts at any level.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>2. What will be the output of the expression `10 / 3` in Java?</p>
-                <input type="radio" name="q2" value="A"> A. 3.333<br>
-                <input type="radio" name="q2" value="B"> B. 3<br>
-                <input type="radio" name="q2" value="C"> C. 4<br>
-                <input type="radio" name="q2" value="D"> D. 0<br>
-                <span class="feedback" id="feedback2"></span>
+            <div class="feature-box">
+                <h2>Expert Tutors</h2>
+                <p>Learn from experienced software engineers and educators.</p>
             </div>
-
-            <div class="quiz-question">
-                <p>3. Which operator is used to find the remainder of a division?</p>
-                <input type="radio" name="q3" value="A"> A. /<br>
-                <input type="radio" name="q3" value="B"> B. %<br>
-                <input type="radio" name="q3" value="C"> C. ><br>
-                <input type="radio" name="q3" value="D"> D. <=<br>
-                <span class="feedback" id="feedback3"></span>
+            <div class="feature-box">
+                <h2>Interactive Content</h2>
+                <p>Engaging video lectures, coding challenges, and downloadable resources.</p>
             </div>
+        </div>
 
-            <div class="quiz-question">
-                <p>4. What will be the result of `5 * 2`?</p>
-                <input type="radio" name="q4" value="A"> A. 10<br>
-                <input type="radio" name="q4" value="B"> B. 15<br>
-                <input type="radio" name="q4" value="C"> C. 7<br>
-                <input type="radio" name="q4" value="D"> D. 0<br>
-                <span class="feedback" id="feedback4"></span>
+        <section id="donate" class="donate-section">
+            <h2 class="donation-title">Support Free Computer Science Education</h2>
+            <div class="donation-image-container">
+                <img src="https://example.com/computer-science.jpg"
+                     alt="Students learning computer science" 
+                     class="donation-image"
+                     loading="lazy">
             </div>
+            <p class="donation-description">
+                Help us provide free computer science resources and tools to students worldwide. Donate today to bridge the digital skills gap!
+            </p>
+        </section>
+    </div>
 
-            <div class="quiz-question">
-                <p>5. Which of the following is NOT a valid operator in Java?</p>
-                <input type="radio" name="q5" value="A"> A. ^<br>
-                <input type="radio" name="q5" value="B"> B. &<br>
-                <input type="radio" name="q5" value="C"> C. ++<br>
-                <input type="radio" name="q5" value="D"> D. **<br>
-                <span class="feedback" id="feedback5"></span>
+    <div class="telegram-popup" id="telegramPopup">
+        <div class="popup-content">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <div class="popup-header">
+                <img src="https://logos-world.net/wp-content/uploads/2021/03/Telegram-Symbol.png" 
+                     alt="Telegram Logo" 
+                     class="telegram-logo">
+                <h2>🚨 Limited Time Access! 🚨</h2>
             </div>
+            <div class="popup-body">
+                <p class="urgent-msg">⚠️ Our Telegram group is closing in less than 24 hours!</p>
+                <p>Join our exclusive Telegram channel to access:</p>
+                <ul>
+                    <li>📚 Free Video Lectures</li>
+                    <li>📝 Study Materials</li>
+                    <li>👥 Community Support</li>
+                    <li>🎯 Coding Challenges</li>
+                </ul>
+                <a href="https://t.me/computersciencehub101" class="join-btn" target="_blank">
+                    Join Now Before It's Too Late!
+                </a>
+            </div>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>&copy; 2024 Computer Science Genius Academy. All Rights Reserved.</p>
+    </footer>
 
-            <button type="submit">Submit Quiz</button>
-        </form>
-    </section>
-
-    <!-- Assignment Section -->
-    <section id="assignment">
-        <h2>Assignment</h2>
-        <p><strong>Assignment Question:</strong></p>
-        <p>Create a Java program that accepts two numbers from the user and performs the following operations: addition, subtraction, multiplication, division, and modulus. Output the results and discuss the differences between integer division and floating-point division.</p>
-        <p>Please submit your assignment by sending an email to: <a href="mailto: programmingmadesimple101@gmail.com"> programmingmadesimple101@gmail.com </a></p>
-        <p>If the link does not work, send your assignment manually to: programmingmadesimple101@gmail.com </p>
-        <textarea id="assignmentInput" rows="6" placeholder="Write your assignment here..."></textarea>
-        <button id="submitAssignment" onclick="submitAssignment()">Submit Assignment</button>
-    </section>
-
-    <!-- Donation Section -->
-    <section id="donation">
-        <h2>PLEASE DONATE</h2>
-        <p>Account Number: 2032202001590</p>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/GTBank_logo.svg/768px-GTBank_logo.svg.png" alt="GTBank Logo" width="150">
-        <p>Wave Mobile: 3709558</p>
-        <img src="https://s.rfi.fr/media/display/ed44f02a-c239-11ec-b0fc-005056bf8594/w:1280/p:16x9/wave-senegal-mobile-money.png" alt="Wave Mobile Logo" width="150">
-    </section>
-
-    <script src="script.js"></script> <!-- Link to external JS file -->
+    <script src="script.js"></script>
 </body>
 </html>
